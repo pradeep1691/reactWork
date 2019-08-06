@@ -14,6 +14,7 @@ import Signup from './view/sign-up';
 import Template from './view/template';
 import TemplateResponse from "./view/TemplateResponse";
 import Plan from "./view/plan";
+import UpgradePlan from "./view/upgradePlan";
 
 
 ReactDOM.render(
@@ -26,6 +27,7 @@ ReactDOM.render(
             <Route path="/template" component={Template} />
             <Route path="/template_response" component={TemplateResponse} />
             <Route path="/plan" component={Plan} />
+            <Route path="/upgradePlan" component={UpgradePlan} />
             <Redirect from="/" to="/login" />
         </Switch>
     </BrowserRouter>,

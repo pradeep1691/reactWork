@@ -8,7 +8,7 @@ export default class Mykiipbox extends Component {
     }
     componentWillUnmount() {
         document.body.classList.remove('after_login')
-      }
+    }
     render() {
         return (
             <>

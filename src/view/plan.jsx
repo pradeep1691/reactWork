@@ -3,6 +3,12 @@ import Header from '../component/header/header';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default class Plan extends Component{
+    componentDidMount() {
+        document.body.classList.add('after_login');
+    }
+    componentWillUnmount() {
+        document.body.classList.remove('after_login')
+    }
     render() {
         return(
         <>
@@ -41,7 +47,7 @@ export default class Plan extends Component{
                             <p><strong>Free</strong> for ever</p>
                             <span>10 leads per month</span>
                         </div>
-                        <Link to="/">
+                        <Link to="/upgradePlan">
                             <button type="button" className="btn btn-default plan_select">Select this plan</button>
                         </Link>
                         </div>

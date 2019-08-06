@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Header from '../component/header/header';
 export default class TemplateResponse extends Component {
+    componentDidMount() {
+        document.body.classList.add('after_login');
+    }
+    componentWillUnmount() {
+        document.body.classList.remove('after_login')
+    }
     render() {
         return (<>
             <Header />

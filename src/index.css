@@ -3310,7 +3310,26 @@ h4.upgrade-title {
 }
 .template-page .search-height .nav-tabs .nav-link.active {
     border-bottom: 0 !important;
-    color: #4f4e4e !important
+    color: #4f4e4e !important;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    font-weight: 600;
+}
+.upgrade_planpage .nav-tabs .nav-link:hover,
+.upgrade_planpage .nav-tabs .nav-link:focus {
+    border-bottom: 0 !important;
+    color: #4f4e4e !important;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+.upgrade_planpage .accordion>.card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 2px solid #f5f5f6 !important;
+    border-radius: 10px !important;
+}
+.upgrade_planpage .accordion>.card:not(:first-of-type) .card-header:first-child {
+    border-radius: 10px !important
 }
 .upgrade_planpage .nav-tabs .nav-link:after {
     content: "\f105";
@@ -3343,8 +3362,8 @@ h4.upgrade-title {
     padding: 0;
     margin-top: 40px;
     border-bottom: 2px solid #f5f5f6;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
     box-shadow: -1px -2px 1px -2px #f5f5f6;
     border-top-right-radius: 10px !important;
     border-top-left-radius: 10px !important;
@@ -3480,6 +3499,7 @@ ul.d-flex.list-inline.plan-amount {
     padding-top: 0;
     color: #11ae9c !important;
     font-weight: 700;
+    font-size: 13px;
 }
 .card_info ul > li .select-all:after {
     content: "\f078" !important;
@@ -3506,7 +3526,8 @@ label.custom_label_payment {
     font-weight: 700;
     color: #000;
 }
-.payment_input {
+.payment_input,
+select.payment_input {
     border-radius: 3px;
     padding: 0 10px;
 }
@@ -3516,15 +3537,15 @@ label.custom_label_payment {
 .col-12.btn_group {
     margin-top: 25px;
 }
-.btn-primary.btn_gray {
+.btn.btn-primary.btn_gray {
     background: #11ae9c;
     border: 1px solid #11ae9c;
     color: #fff;
     padding: 7px 20px;
 }
-.btn_cancle,
-.btn_cancle:hover,
-.btn_cancle:focus {
+.btn.btn_cancle,
+.btn.btn_cancle:hover,
+.btn.btn_cancle:focus {
     background: transparent;
     color: #11ae9c;
     font-weight: 600;
