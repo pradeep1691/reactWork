@@ -57,8 +57,8 @@ export default class Login extends Component {
                                             <div className="form-group row">
                                                 <div className="checkbox checkbox-info col-sm-12">
                                                     <input type="checkbox" id="checkbox-1-1" className="regular-checkbox" />
-                                                    <label for="checkbox-1-1"></label>
-                                                    <label for="checkbox-1-1"><span>I agree all statements in</span> <a href="#"> terms of services</a></label>
+                                                    <label htmlFor="checkbox-1-1"></label>
+                                                    <label htmlFor="checkbox-1-1"><span>I agree all statements in</span> <a href="#"> terms of services</a></label>
                                                 </div>
                                             </div>
                                             <div className="form-group no_height">

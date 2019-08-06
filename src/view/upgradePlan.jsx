@@ -67,33 +67,33 @@ export default class UpreadePlan extends Component {
                                     <form>
                                         <div className="form-row">
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputEmail4">First name</label>
+                                            <label className="custom_label" htmlFor="inputEmail4">First name</label>
                                             <input type="text" className="form-control" id="inputEmail4" placeholder="" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputPassword4">Last name</label>
+                                            <label className="custom_label" htmlFor="inputPassword4">Last name</label>
                                             <input type="text" className="form-control" id="inputPassword4" placeholder="" />
                                         </div>
                                         </div>
 
                                         <div className="form-row">
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputEmail4">Address</label>
+                                            <label className="custom_label" htmlFor="inputEmail4">Address</label>
                                             <input type="text" className="form-control" id="inputEmail4" placeholder="" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputPassword4">City</label>
+                                            <label className="custom_label" htmlFor="inputPassword4">City</label>
                                             <input type="text" className="form-control" id="inputPassword4" placeholder="" />
                                         </div>
                                         </div>
 
                                         <div className="form-row">
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputEmail4">Postal Code</label>
+                                            <label className="custom_label" htmlFor="inputEmail4">Postal Code</label>
                                             <input type="text" className="form-control" id="inputEmail4" placeholder="" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputPassword4">Country</label>
+                                            <label className="custom_label" htmlFor="inputPassword4">Country</label>
                                             <select className="form-control custome_select2">
                                                 <option></option>
                                                 <option value="usa">United States</option>
@@ -107,8 +107,8 @@ export default class UpreadePlan extends Component {
                                         <div className="form-group col-md-6">
                                             <div className="checkbox checkbox-info">
                                             <input type="checkbox" id="checkbox-1-1" className="regular-checkbox" />
-                                            <label for="checkbox-1-1"></label>
-                                            <label for="checkbox-1-1"><span>Use this address for billing</span></label>
+                                            <label htmlFor="checkbox-1-1"></label>
+                                            <label htmlFor="checkbox-1-1"><span>Use this address for billing</span></label>
                                             </div>
                                         </div>
                                         <div className="form-group col-md-6 text-right">
@@ -136,33 +136,33 @@ export default class UpreadePlan extends Component {
                                     <form>
                                         <div className="form-row">
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputEmail4">First name</label>
+                                            <label className="custom_label" htmlFor="inputEmail4">First name</label>
                                             <input type="text" className="form-control" id="inputEmail4" placeholder="" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputPassword4">Last name</label>
+                                            <label className="custom_label" htmlFor="inputPassword4">Last name</label>
                                             <input type="text" className="form-control" id="inputPassword4" placeholder="" />
                                         </div>
                                         </div>
 
                                         <div className="form-row">
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputEmail4">Address</label>
+                                            <label className="custom_label" htmlFor="inputEmail4">Address</label>
                                             <input type="text" className="form-control" id="inputEmail4" placeholder="" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputPassword4">City</label>
+                                            <label className="custom_label" htmlFor="inputPassword4">City</label>
                                             <input type="text" className="form-control" id="inputPassword4" placeholder="" />
                                         </div>
                                         </div>
 
                                         <div className="form-row">
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputEmail4">Postal Code</label>
+                                            <label className="custom_label" htmlFor="inputEmail4">Postal Code</label>
                                             <input type="text" className="form-control" id="inputEmail4" placeholder="" />
                                         </div>
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputPassword4">Country</label>
+                                            <label className="custom_label" htmlFor="inputPassword4">Country</label>
                                             <select className="form-control custome_select2">
                                                 <option></option>
                                                 <option value="usa">United States</option>
@@ -174,7 +174,7 @@ export default class UpreadePlan extends Component {
 
                                         <div className="form-row d-flex align-items-end">
                                         <div className="form-group col-md-6">
-                                            <label className="custom_label" for="inputEmail4">VAT Number</label>
+                                            <label className="custom_label" htmlFor="inputEmail4">VAT Number</label>
                                             <input type="text" className="form-control" id="inputEmail4" placeholder="" />
                                         </div>
                                         <div className="form-group col-md-6 text-right">
@@ -203,7 +203,7 @@ export default class UpreadePlan extends Component {
                                         <div className="form-group col-md-12">
                                             <div className="custom-control custom-radio">
                                             <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input" />
-                                            <label className="custom-control-label" for="customRadio1">Credit Card</label>
+                                            <label className="custom-control-label" htmlFor="customRadio1">Credit Card</label>
                                             <div className="card_info">
                                                 <ul>
                                                 <li>
@@ -279,7 +279,7 @@ export default class UpreadePlan extends Component {
                                         <div className="form-group col-md-12 m-b0">
                                             <div className="custom-control custom-radio">
                                             <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input" />
-                                            <label className="custom-control-label" for="customRadio2">
+                                            <label className="custom-control-label" htmlFor="customRadio2">
                                                 <img src={require('../assets/images/paypal_payment.png')} />
                                             </label>
                                             <div className="card_info">

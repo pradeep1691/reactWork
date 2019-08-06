@@ -32,15 +32,15 @@ export default class Signup extends Component {
                                             <li>You are an</li>
                                             <li className="active">
                                                 <input type="radio" id="radio-1-1" name="radio-1-set" className="regular-radio" checked />
-                                                <label for="radio-1-1"><span>Individual</span></label>
+                                                <label htmlFor="radio-1-1"><span>Individual</span></label>
                                             </li>
                                             <li>
                                                 <input type="radio" id="radio-1-2" name="radio-1-set" className="regular-radio" />
-                                                <label for="radio-1-2"><span>Professional</span></label>
+                                                <label htmlFor="radio-1-2"><span>Professional</span></label>
                                             </li>
                                             <li>
                                                 <input type="radio" id="radio-1-31" name="radio-1-set" className="regular-radio" />
-                                                <label for="radio-1-31"><span>Company</span></label>
+                                                <label htmlFor="radio-1-31"><span>Company</span></label>
                                             </li>
                                             </ul>
                                             <ul className="list-inline second-row">
@@ -71,7 +71,7 @@ export default class Signup extends Component {
             
                                         <div className="form-group row file_upload">
                                             <div className="col-sm-12">
-                                            <label className="custome-upload" for="upload">
+                                            <label className="custome-upload" htmlFor="upload">
                                                 <input type="file" className="form-control" id="upload" placeholder="Full Name" />
                                                 <img src={require('./../assets/images/upload-icon.png')} id="crop_img" width="82" height="82" class="img-circle" />
                                             </label>

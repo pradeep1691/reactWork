@@ -49,7 +49,7 @@ export default class TemplateResponse extends Component {
                                                     <th>
                                                         <div className="checkbox checkbox-info">
                                                             <input type="checkbox" id="checkbox-1-1" className="regular-checkbox" />
-                                                            <label for="checkbox-1-1"></label>
+                                                            <label htmlFor="checkbox-1-1"></label>
                                                         </div>
                                                     </th>
 
@@ -91,7 +91,7 @@ export default class TemplateResponse extends Component {
                                                     <td>
                                                         <div className="checkbox checkbox-info">
                                                             <input type="checkbox" id="checkbox-1-2" className="regular-checkbox" />
-                                                            <label for="checkbox-1-2"></label>
+                                                            <label htmlFor="checkbox-1-2"></label>
                                                         </div>
                                                     </td>
 
