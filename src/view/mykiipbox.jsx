@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from '../component/header/header';
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
+
 export default class Mykiipbox extends Component {
     componentDidMount() {
         document.body.classList.add('after_login');
@@ -9,7 +10,23 @@ export default class Mykiipbox extends Component {
     componentWillUnmount() {
         document.body.classList.remove('after_login')
     }
+    constructor(props) {
+        super(props);
+        this.state = {
+            active :false
+    }
+        this.preview = this.preview.bind(this);
+    }
+    preview() {
+        this.setState({
+            active : !this.state.active
+        })
+    }
     render() {
+        let active = ["box_view"];
+            if(this.state.active) {
+                active.push('active');
+        }
         return (
             <>
             <Header/>
@@ -60,10 +77,11 @@ export default class Mykiipbox extends Component {
                                     </div>
                                     </li>
                                     <li className="">
-                                    Display: <span className="view-changer box_view active" data-attr="gallery"></span>
+                                        {/* <span  className = {this.state.blur ? 'blur post_options':'post_options'} onClick = {this.preview}>Test</span> */}
+                                    Display: <span className ={active.join(' ')}  onClick = {this.preview} data-attr="gallery"></span>
                                     </li>
                                 </ul>
-                                <a className="view-changer list_icon" data-attr="list-view"></a>
+                                <a className = {this.state.active ? 'active view-changer list_icon':'view-changer list_icon'} onClick = {this.preview} data-attr="list-view"></a>
                             </div>
 
                             <div className="result-container">
