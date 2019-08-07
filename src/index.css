@@ -3066,7 +3066,7 @@ img.img-fluid.img-kiip {
     width: 45px;
     height: 45px;
     font-size: 50px;
-    line-height: 40px;
+    line-height: 33px;
     padding: 0;
     border-radius: 50%;
     border-color: #11ae9c;
@@ -3199,7 +3199,7 @@ span.dropdown_ico {
 .kiip_list_view .checkbox-info label > span {
     color: #4f4e4e
 }
-.div_none {
+.row.div_none {
     display: none;
 }
 .row.grid_view.div_none {
