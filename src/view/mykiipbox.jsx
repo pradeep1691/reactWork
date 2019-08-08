@@ -10,34 +10,21 @@ export default class Mykiipbox extends Component {
     componentWillUnmount() {
         document.body.classList.remove('after_login')
     }
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         active :false
-    // }
-    //     this.preview = this.preview.bind(this);
-    // }
-    // preview() {
-    //     this.setState({
-    //         active : !this.state.active
-    //     })
-    // }
-    
-        state = { showMenu: true }
-        // state = { hideMenu: false }
-    
-
-    toggleMenu = () => {
-            this.setState({showMenu: !this.state.showMenu
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+          current: 1
+        };
+    }
+      
+    toggle(index) {
+        this.setState({
+          current: index
         })
     }
-    // toggleMenu = () => {
-    //     this.setState({hideMenu: !this.state.hideMenu
-    // })
-// }
     render() {
-        const menuVis = this.state.showMenu ? 'show' : 'div_none';
-        // const menuHid = this.state.hideMenu ? 'show' : 'div_none';
+        
         return (
             <>
             <Header/>
@@ -88,10 +75,10 @@ export default class Mykiipbox extends Component {
                                     </div>
                                     </li>
                                     <li className="">
-                                    Display: <span className ="active view-changer box_view" onClick={this.toggleMenu} data-attr="gallery"></span>
+                                    Display: <span onClick={this.toggle.bind(this, 1)} className ={`view-changer box_view ${this.state.current === 1 ? 'active' : ''}`} data-attr="gallery"></span>
                                     </li>
                                 </ul>
-                                <Link className = "view-changer list_icon" onClick={this.toggleMenu} data-attr="list-view"></Link>
+                                <Link className = {`view-changer list_icon ${this.state.current === 2 ? 'active' : ''}`} onClick={this.toggle.bind(this, 2)} data-attr="list-view"></Link>
                             </div>
 
                             <div className="result-container">
@@ -109,7 +96,7 @@ export default class Mykiipbox extends Component {
                     </div>
 
 
-                    <div className={`row grid_view ${menuVis}`}>
+                    <div className={`row grid_view ${this.state.current === 2 ? 'div_none ': ''}`}>
                     <div className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
                         <div className="my-kiip-box row">
                         <div className="checkbox checkbox-info">
@@ -187,7 +174,7 @@ export default class Mykiipbox extends Component {
                     </div>
                     </div>
                     
-                    <div className={`row list_view_box my-kiip-box div_none ${menuVis}`}>
+                    <div className={`row list_view_box my-kiip-box ${this.state.current === 1 ? 'div_none ': ''}`}>
                     <div className="col-12 col-sm-12 col-md-12 col-lg-12 no-pad">
 
 
