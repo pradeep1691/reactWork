@@ -28,7 +28,7 @@ export default class Plan extends Component{
                     <div className="audience_target height_input_box"> 
                         <label className="active_label">Monthly</label>
                         <label className="switch">
-                        <input type="checkbox" checked />
+                        <input type="checkbox" />
                         <span className="slider round"></span>
                         </label>
                         <label className="active_label">Yearly</label>
@@ -58,7 +58,7 @@ export default class Plan extends Component{
                         <h5>PROFESSIONAL</h5>
                         <p><strong>19,80$</strong> per month</p>
                         <span>100 leads per month</span>
-                        <Link to="/">
+                        <Link to="/upgradePlan">
                             <button type="button" className="btn btn-default plan_select">Start free trial</button>
                         </Link>
                         </div>
@@ -69,7 +69,7 @@ export default class Plan extends Component{
                         <h5>BUSINESS</h5>
                         <p><strong>49,60$</strong> per month</p>
                         <span>1000 leads per month</span>
-                        <Link to="/">
+                        <Link to="/upgradePlan">
                             <button type="button" className="btn btn-default plan_select">Start free trial</button>
                         </Link>
                         </div>
@@ -80,7 +80,7 @@ export default class Plan extends Component{
                         <h5>CORPORATE</h5>
                         <p><strong>199,40$</strong> per month</p>
                         <span>10000 leads per month</span>
-                        <Link to="/">
+                        <Link to="/upgradePlan">
                             <button type="button" className="btn btn-default plan_select">Start free trial</button>
                         </Link>
                         </div>
@@ -91,7 +91,7 @@ export default class Plan extends Component{
                         <h5>PAY-PER-USE</h5>
                         <p><strong>0,50$ </strong> per lead</p>
                         <span>Unlmited number of</span>
-                        <Link to="/">
+                        <Link to="/upgradePlan">
                             <button type="button" className="btn btn-default plan_select">Start free trial</button>
                         </Link>
                         </div>
@@ -175,7 +175,7 @@ export default class Plan extends Component{
                                 <li data-index="6" className="disable_list feature-list">Marketing document builder</li>
                                 <li data-index="7" className="feature-list">Export leads</li>
                                 <li data-index="8" className="feature-list">Export leads</li>
-                                <li data-index="9" className="disable_hover"><a href="upgrade_step_1.html" class="btn btn-default login-btn">Sign-Up</a></li>
+                                <li data-index="9" className="disable_hover"><Link to="/upgradePlan" className="btn btn-default login-btn">Sign-Up</Link></li>
                                 <li data-index="10" className="disable_list feature-list">Auto-response builder</li>
                                 <li data-index="11" className="disable_list feature-list">Attach document in auto-response</li>
                                 <li data-index="12" className="disable_list feature-list">Artificial Intelligence to parse email content</li>
@@ -194,7 +194,7 @@ export default class Plan extends Component{
                                 <li data-index="6" className="disable_list feature-list">Marketing document builder</li>
                                 <li data-index="7" className="feature-list">Export leads</li>
                                 <li data-index="8" className="feature-list">Export leads</li>
-                                <li data-index="9" className="disable_hover"><a href="upgrade_step_1.html" class="btn btn-default login-btn">Start free trial</a></li>
+                                <li data-index="9" className="disable_hover"><Link to="/upgradePlan" className="btn btn-default login-btn">Start free trial</Link></li>
                                 <li data-index="10" className="disable_list feature-list">Auto-response builder</li>
                                 <li data-index="11" className="feature-list">Attach document in auto-response</li>
                                 <li data-index="12" className="disable_list feature-list">Artificial Intelligence to parse email content</li>
@@ -213,7 +213,7 @@ export default class Plan extends Component{
                                 <li data-index="6" className="feature-list">Marketing document builder</li>
                                 <li data-index="7" className="feature-list">Export leads</li>
                                 <li data-index="8" className="feature-list">Export leads</li>
-                                <li data-index="9" className="disable_hover"><a href="upgrade_step_1.html" class="btn btn-default login-btn">Start free trial</a></li>
+                                <li data-index="9" className="disable_hover"><Link to="/upgradePlan" className="btn btn-default login-btn">Start free trial</Link></li>
                                 <li data-index="10" className="feature-list">Auto-response builder</li>
                                 <li data-index="11" className="feature-list">Attach document in auto-response</li>
                                 <li data-index="12" className="feature-list">Artificial Intelligence to parse email content</li>
@@ -222,8 +222,8 @@ export default class Plan extends Component{
                             </li>
                             <li className="">
                             <ul className="list-inline inner_list">
-                                <li class=""><h4>CORPORATE</h4></li>
-                                <li data-index="0" clclassNameass="color_text feature-list">Start free trial</li>
+                                <li className=""><h4>CORPORATE</h4></li>
+                                <li data-index="0" className="color_text feature-list">Start free trial</li>
                                 <li data-index="1" className="bgcolor_text feature-list">199,40$ per month</li>
                                 <li data-index="2" className="feature-list">0,10$ per lead over plan</li>
                                 <li data-index="3" className="feature-list">1 Giga octet</li>
@@ -232,7 +232,7 @@ export default class Plan extends Component{
                                 <li data-index="6" className="feature-list">Marketing document builder</li>
                                 <li data-index="7" className="feature-list">Export leads</li>
                                 <li data-index="8" className="feature-list">Export leads</li>
-                                <li data-index="9" className="disable_hover"><a href="upgrade_step_1.html" class="btn btn-default login-btn">Start free trial</a></li>
+                                <li data-index="9" className="disable_hover"><Link to="/upgradePlan" className="btn btn-default login-btn">Start free trial</Link></li>
                                 <li data-index="10" className="feature-list">Auto-response builder</li>
                                 <li data-index="11" className="feature-list">Attach document in auto-response</li>
                                 <li data-index="12" className="feature-list">Artificial Intelligence to parse email content</li>
@@ -251,7 +251,7 @@ export default class Plan extends Component{
                                 <li data-index="6" className="feature-list">Marketing document builder</li>
                                 <li data-index="7" className="feature-list">Export leads</li>
                                 <li data-index="8" className="feature-list">Export leads</li>
-                                <li data-index="9" className="disable_hover"><a href="upgrade_step_1.html" class="btn btn-default login-btn">Start free trial</a></li>
+                                <li data-index="9" className="disable_hover"><Link to="/upgradePlan" className="btn btn-default login-btn">Start free trial</Link></li>
                                 <li data-index="10" className="feature-list">Auto-response builder</li>
                                 <li data-index="11" className="feature-list">Attach document in auto-response</li>
                                 <li data-index="12" className="feature-list">Artificial Intelligence to parse email content</li>

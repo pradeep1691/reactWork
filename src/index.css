@@ -1180,7 +1180,7 @@ button.btn.btn-default.cancle_btn {
     background: transparent;
     font-size: 13px;
 }
-.create_btn {
+.btn.create_btn {
     border-radius: 30px;
     padding: 5px 40px;
     background: #11ae9c;
@@ -3864,10 +3864,10 @@ h4.create_kiip_title {
 .mt-10 {
     margin-top: 5px;
 }
-.create_btn:hover,
-.create_btn:focus,
-.btn_green:focus,
-.btn_green:hover {
+.btn.create_btn:hover,
+.btn.create_btn:focus,
+.btn.btn_green:focus,
+.btn.btn_green:hover {
     background: #16d6c0;
     color: #fff;
 }
@@ -4661,6 +4661,7 @@ li.search_template {
     display: inline-block;
     width: 100%;
     margin-bottom: 10px;
+    font-size: 13px;
 }
 ul.list-inline.autoresponse_list {
     flex-direction: column;

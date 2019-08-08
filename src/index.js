@@ -15,6 +15,9 @@ import Template from './view/template';
 import TemplateResponse from "./view/TemplateResponse";
 import Plan from "./view/plan";
 import UpgradePlan from "./view/upgradePlan";
+import MyDocument from './view/myDocument';
+import ReferAfriend from './view/referAfriend';
+import CreateAkiipbox from './view/createAkiipbox';
 
 
 ReactDOM.render(
@@ -28,6 +31,9 @@ ReactDOM.render(
             <Route path="/template_response" component={TemplateResponse} />
             <Route path="/plan" component={Plan} />
             <Route path="/upgradePlan" component={UpgradePlan} />
+            <Route path="/myDocument" component={MyDocument} />
+            <Route path="/referAfriend" component={ReferAfriend} />
+            <Route path="/createAkiipbox" component={CreateAkiipbox} />
             <Redirect from="/" to="/login" />
         </Switch>
     </BrowserRouter>,
