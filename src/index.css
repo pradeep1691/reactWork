@@ -2000,16 +2000,17 @@ form.invoice_form {
     border: 1px solid #818080;
     max-width: 153px;
 }
-.custom__date {
+.custom__date,
+.input-group.date input {
     -webkit-appearance: none;
     background-repeat: no-repeat;
     width: 100%;
     display: inline-block;
-    padding: 0 0 0 8px;
-    border-radius: 8px !important; 
+    padding: 7px 8px;
+    border-radius: 4px !important;
     font-size: 14px;
     color: #818080;
-    border: 1px solid #818080;
+    border: 1px solid #ced4da;;
     max-width: 153px;
     background-position: 96% 14px;
     background-image: url(assets/images/dropdown.png) !important;
@@ -4028,6 +4029,12 @@ span.enable_dot {
 .nav-tabs.account_page li.nav-item .nav-link {
     font-size: 13px;
 }
+.nav-tabs.account_page li.nav-item .nav-link:hover,
+.nav-tabs.account_page li.nav-item .nav-link:focus {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
 .template-page .search-height .nav-tabs.account_page li.nav-item .nav-link.active {
     border-bottom: 0 !important;
     color: #532e89 !important;
@@ -4036,9 +4043,9 @@ span.enable_dot {
     width: 100%;
     max-width: none;
 }
-.change_password_btn,
-.change_password_btn:focus,
-.change_password_btn:hover {
+.btn.change_password_btn,
+.btn.change_password_btn:focus,
+.btn.change_password_btn:hover {
     background: transparent;
     border: transparent;
     color: #11ae9c;

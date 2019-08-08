@@ -42,10 +42,10 @@ function Header() {
                         <span className="avtar"><img src={require('../../assets/images/user-img.png')} /></span>
                     </Link>
                     <div className="dropdown-menu" aria-labelledby="dropdown-1">
-                        <Link className="dropdown-item" to="/">Account</Link>
-                        <Link className="dropdown-item" to="/">Setting</Link>
-                        <Link className="dropdown-item" to="/">Payment method</Link>
-                        <Link className="dropdown-item" to="/">Invoices</Link>
+                        <Link className="dropdown-item" to="/account">Account</Link>
+                        <Link className="dropdown-item" to="/setting">Setting</Link>
+                        <Link className="dropdown-item" to="/paymentMethod">Payment method</Link>
+                        <Link className="dropdown-item" to="/invoice">Invoices</Link>
                         <Link className="dropdown-item" to="/">Logout</Link>
                     </div>
                     </li>

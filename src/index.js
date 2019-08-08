@@ -18,6 +18,10 @@ import UpgradePlan from "./view/upgradePlan";
 import MyDocument from './view/myDocument';
 import ReferAfriend from './view/referAfriend';
 import CreateAkiipbox from './view/createAkiipbox';
+import Account from './view/account';
+import Setting from './view/setting';
+import PaymentMethod from './view/paymentMethod';
+import Invocie from './view/invoice';
 
 
 ReactDOM.render(
@@ -34,6 +38,10 @@ ReactDOM.render(
             <Route path="/myDocument" component={MyDocument} />
             <Route path="/referAfriend" component={ReferAfriend} />
             <Route path="/createAkiipbox" component={CreateAkiipbox} />
+            <Route path="/account" component={Account} />
+            <Route path="/setting" component={Setting} />
+            <Route path="/paymentMethod" component={PaymentMethod} />
+            <Route path="/invoice" component={Invocie} />
             <Redirect from="/" to="/login" />
         </Switch>
     </BrowserRouter>,
