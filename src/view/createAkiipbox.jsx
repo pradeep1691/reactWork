@@ -3,7 +3,24 @@ import { BrowserRouter as Router, Link} from 'react-router-dom';
 import Header from '../component/header/header';
 
 export default class CreateAkiipbox extends Component {
+    constructor() {
+		super();
+		this.state = {shown: true,};
+	}	
+	
+	toggle() {
+		this.setState({
+			shown: !this.state.shown
+        });
+	}
     render() {
+        var shown = {
+			display: this.state.shown ? "block" : "none"
+		};
+		
+		var hidden = {
+			display: this.state.shown ? "none" : "block"
+        }
         return(
             <>
             <Header/>
@@ -26,7 +43,7 @@ export default class CreateAkiipbox extends Component {
                         </p>
                         <p className="audience_target height_box">
                             <span>Cover image:</span> 
-                            <span className="add_side_upload add_box">
+                            <span className="add_side_upload add_box" onClick={this.toggle.bind(this)}>
                             <label>
                                 <span><img src={require('../assets/images/white-upload.png')} /></span>
                             </label>      
@@ -50,19 +67,19 @@ export default class CreateAkiipbox extends Component {
                         <ul className="list-inline d-flex autoresponse_list justify-content-between first-row">
                             <li className="first_select"><strong>Select autoresponse type:</strong></li>
                             <li className="">
-                            <input type="radio" id="radio-1-1" name="radio-1-set" className="regular-radio"/>
-                            <label htmlFor="radio-1-1"></label>
-                            <label htmlFor="radio-1-1"><span className="bold_text">None.</span> No autoresponse email will be sent to new subscribers</label>
+                                <input type="radio" id="radio-1-1" name="radio-1-set" className="regular-radio" defaultChecked/>
+                                <label htmlFor="radio-1-1"></label>
+                                <label htmlFor="radio-1-1"><span className="bold_text">None.</span> No autoresponse email will be sent to new subscribers</label>
                             </li>
                             <li>
-                            <input type="radio" id="radio-1-2" name="radio-1-set" className="regular-radio"/>
-                            <label htmlFor="radio-1-2"></label>
-                            <label htmlFor="radio-1-2"><span className="bold_text">Single.</span> Send a short standardized email to your subscribers</label>
+                                <input type="radio" id="radio-1-2" name="radio-1-set" className="regular-radio"/>
+                                <label htmlFor="radio-1-2" onClick={this.toggle.bind(this)}></label>
+                                <label htmlFor="radio-1-2" onClick={this.toggle.bind(this)}><span className="bold_text">Single.</span> Send a short standardized email to your subscribers</label>
                             </li>
                             <li>
-                            <input type="radio" id="radio-1-3" name="radio-1-set" className="regular-radio"/>
-                            <label htmlFor="radio-1-3"></label>
-                            <label htmlFor="radio-1-3"><span className="bold_text">Branded.</span> Customize your autoresponse email to your branding</label>
+                                <input type="radio" id="radio-1-3" name="radio-1-set" className="regular-radio"/>
+                                <label htmlFor="radio-1-3"></label>
+                                <label htmlFor="radio-1-3"><span className="bold_text">Branded.</span> Customize your autoresponse email to your branding</label>
                             </li>
                         </ul>
                         </form>
@@ -150,7 +167,7 @@ export default class CreateAkiipbox extends Component {
                         <ul className="list-inline d-flex autoresponse_list justify-content-between first-row">
                             <li className="first_select"><strong>Select contact email type:</strong></li>
                             <li className="">
-                                <input type="radio" id="radio-1-12" name="radio-1-set" className="regular-radio"/>
+                                <input type="radio" id="radio-1-12" name="radio-1-set" className="regular-radio" defaultChecked/>
                                 <label htmlFor="radio-1-12"></label>
                                 <label htmlFor="radio-1-12"><span className="bold_text">@kiipintouch.</span> It’s simple and free</label>
                             </li>
@@ -206,6 +223,35 @@ export default class CreateAkiipbox extends Component {
                     </div>
                 </div>
                 </section>
+
+                <div className="add_img_box sideDiv" style={ hidden }>
+                    <div className="side-box">
+                        <h4>Set your cover image</h4>
+                        <button type="button" className="close" data-dismiss="sideDiv" aria-label="Close" onClick={this.toggle.bind(this)}>
+                            <span aria-hidden="true">✕</span>
+                        </button>
+                        <ul className="list-inline">
+                        <li>
+                            <img src={require('../assets/images/free-photo.jpg')} />
+                            <p className="text-center">Free Photos</p>
+                        </li>
+                        <li>
+                            <img src={require('../assets/images/color-photo.jpg')} />
+                            <p className="text-center">Colors</p>
+                        </li>
+                        <li className="add_side_upload">
+                            <label>
+                            <input type="file" name=""/>
+                                <span><img src={require('../assets/images/upload-icon-img.jpg')} /></span>
+                            </label>      
+                            <p>Upload image</p>
+                        </li>
+                        </ul>
+                        <p>This image will also be used to design your guidance document used to advertize your Kiip Box contact email address. </p>
+
+                        <p>You can design and print your guidance document to display it in your store so that visitors see it and can signup.</p>
+                    </div>
+                </div>
             </>
     )}
 }
